@@ -1,0 +1,278 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(45deg,#e66465, #9198e5);
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+header {
+  height: auto;
+}
+
+header h1 {
+  max-width: 100%;
+  margin: 0;
+  font-family: "MullerLight";
+  font-size: 10vw;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 4vw;
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+section {
+  min-height: 100vh;
+}
+
+.workspace {
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
+.workspace h1 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 4.5vw;
+  margin-bottom: 100px;
+  text-decoration: underline;
+}
+
+.btn__wrap {
+  z-index: ;
+}
+
+.create__btn {
+  max-width: 17.5vw;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  border: 5px solid white;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.create__btn h2 {
+  margin: 0;
+  /* position: relative; */
+  padding: 1vw 2vw;
+  text-align: center;
+  font-size: 2.8vw;
+}
+
+.create__btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.create__btn h2:hover {
+  background: linear-gradient(45deg,#e66465, #9198e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.modalInput__wrap {
+  display: none;
+
+}
+
+.modalInput {
+  position: fixed;
+  padding: 0 10vw;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  border: 3px solid white;
+  z-index: 99;
+}
+
+.bg__layer {
+  top: 0;
+  left: 0;
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 90;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* overflow-y: hidden; */
+}
+
+.modalInput h3 {
+  background: linear-gradient(45deg,#e66465, #9198e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 3vw;
+}
+
+.modalInput input {
+  position: relative;
+  font-size: 1.5vw;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: gray;
+  /* border: 3px solid #e66465; */
+}
+
+.save__btn {
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 200px;
+  border: 3px solid #9198e5;
+  margin-bottom: 50px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.save__btn h4 {
+  margin: 0;
+  padding: 10px;
+  color: #9198e5;
+  font-size: 2vw;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.save__btn:hover {
+  background-color: #9198e5;
+}
+
+.save__btn h4:hover {
+  color: white;
+}
+
+.close__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.close__btn:hover {
+  opacity: 0.7;
+}
+
+.close__btn:before, .close__btn:after  {
+  left: 15px;
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 32px;
+  background-color: #333;
+}
+
+.close__btn:before {
+  transform: rotate(45deg);
+}
+
+.close__btn:after {
+  transform: rotate(-45deg);
+}
+
+
+
+.deals__wrap {
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+
+.deal {
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+}
+
+.deal p {
+  max-width: 300px;
+  word-wrap: break-word;
+  display: inline-block;
+  /* width: 70%; */
+  position: relative;
+  left: 3vw;
+}
+
+.deal hr {
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  border-style: solid;
+  opacity: 0.5;
+}
+
+.dealClose {
+  position: relative;
+  float: right;
+  width: 4vw;
+  height: 4vw;
+  opacity: 0.5;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.dealClose:hover {
+  opacity: 1;
+}
+
+.dealClose:before, .dealClose:after {
+  position: absolute;
+  height: 3.5vw;
+  width: 0.2vw;
+  content: '';
+  background-color: white;
+
+}
+
+.dealClose:before {
+  transform: rotate(45deg);
+}
+
+.dealClose:after {
+  transform: rotate(-45deg);
+}
+
+
+.done::before {
+  position: absolute;
+  content: '';
+  float: left;
+  margin-top: 30px;
+  display: block;
+  /* display: none; */
+  height: 1.5vw;
+  width: 3vw;
+  border-bottom: 0.15vw solid white;
+  border-left: 0.15vw solid white;
+  transform: rotate(-45deg);
+}
+
+.done p {
+  text-decoration: line-through;
+  /* left: -1vw; */
+}
+
+@media screen and (min-width: 1600px) {
+  .workspace {
+    max-width: 1200px;
+    margin-top: 7vw;
+  }
+
+
+}

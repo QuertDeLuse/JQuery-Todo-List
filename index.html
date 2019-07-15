@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <title>Document</title>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="header__wrap">
+        <h1>todo</h1>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="section__wrap">
+        <div class="workspace">
+          <h1>Your deals</h1>
+
+          <div class="create__btn" onclick="createNew()">
+            <h2>Create new</h2>
+          </div>
+
+          <div id="modal" class="modalInput__wrap">
+            <div class="modalInput">
+              <div class="close__btn" onclick="closeModal()"></div>
+              <h3>Enter your deal</h3>
+              <input id="inputData" type="text" name="" value="" placeholder="Deal">
+              <div class="save__btn" onclick="addDeal()">
+                <h4>Save</h4>
+              </div>
+            </div>
+          </div>
+          <div class="bg__layer"></div>
+
+          <div class="deals__wrap">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/btnScript.js">
+
+  </script>
+
+</body>
+</html>

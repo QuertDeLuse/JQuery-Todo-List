@@ -1,0 +1,27 @@
+@font-face{
+	font-family: 'MullerBlack';
+	src: url('../fonts/muller/Fontfabric - MullerBlack.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'MullerLight';
+	src: url('../fonts/muller/Fontfabric - MullerLight.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'MullerBold';
+	src: url('../fonts/muller/Fontfabric - MullerBold.otf');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'MullerRegularItalic';
+	src: url('../fonts/muller/Fontfabric - MullerRegularItalic.otf');
+	font-weight: bold;
+	font-style: normal;
+}
