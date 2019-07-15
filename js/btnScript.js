@@ -1,7 +1,8 @@
-var id;
+var id, dealQuantity;
 
 $('document').ready(function() {
   id = 0;
+  dealQuantity = 0;
 });
 
 function createNew() {
@@ -20,6 +21,7 @@ function closeModal() {
 
 function addDeal() {
   id = id + 1;
+  dealQuantity += 1;
   deal = document.getElementById("inputData").value;
 
   if (deal != "") {
@@ -34,8 +36,8 @@ function addDeal() {
   ($(".bg__layer")).fadeOut(300);
 }
 
-function dealClick(id) {
-  deal = ($('#'+id));
+function dealClick(idIn) {
+  deal = ($('#'+idIn));
   if(deal.hasClass('done')) {
 
     deal.removeClass('done');
@@ -45,7 +47,11 @@ function dealClick(id) {
   }
 }
 
-function dealDelete(id) {
-  $('#'+id).remove();
-  console.log(id);
+function dealDelete(idIn) {
+  $('#'+idIn).remove();
+  // console.log(id);
+  dealQuantity -= 1;
+  if (dealQuantity == 0)
+    id = 0;
+  console.log(dealQuantity,id);
 }
